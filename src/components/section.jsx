@@ -25,12 +25,15 @@ const Sections = ({ setActiveSection }) => {
                 <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 w-full relative z-10">
                     <div className="lg:col-span-7 flex flex-col justify-center">
                         <h1 className="max-w-2xl mb-2 text-4xl font-semibold tracking-tight leading-none md:text-5xl xl:text-6xl text-zinc-950">
-                            Transforme<br />Ideias em Soluções
+                            Transforme<br/>Ideias em Soluções
                         </h1>
                         <p className="max-w-xl font-light text-zinc-700 lg:mb-8 text-sm md:text-base lg:text-lg">
                             Desenvolvemos softwares personalizado para seu sucesso. Inovação e qualidade em cada projeto.
                         </p>
-                        <a href="#sobreNos" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">Ver mais<CornerRightDown className="ml-2" /></a>
+                        <a href="#sobreNos" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">
+                            Ver mais
+                            <CornerRightDown className="ml-2"/>
+                        </a>
                     </div>
                     <div className="hidden lg:col-span-5 lg:flex items-center justify-center">
                         <div className="grid grid-cols-2 gap-3">
@@ -58,7 +61,7 @@ const Sections = ({ setActiveSection }) => {
                 <div className="grid max-w-screen-xl mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 w-full relative z-10">
                     <div className="hidden lg:col-span-5 lg:flex items-center justify-center">
                         <div className="w-96 h-96 rounded-3xl bg-zinc-100 flex items-center justify-center">
-                            <img src="./src/assets/img/logo-black.png" alt="" className="max-w-full max-h-full object-contain size-56" />
+                            <img src="./src/assets/gif/logosAgencia.gif" alt="" className="w-full h-full object-cover rounded-3xl" />
                         </div>
                     </div>
                     <div className="lg:col-span-7 flex flex-col items-start text-left -ml-4">
@@ -72,7 +75,9 @@ const Sections = ({ setActiveSection }) => {
                 </div>
             </section>
 
+            <section id="projetos" className="relative min-h-screen flex items-center overflow-hidden bg-zinc-100">
 
+            </section>
         </>
     );
 };
