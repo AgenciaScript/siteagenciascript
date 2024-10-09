@@ -25,8 +25,8 @@ const Navbar = ({ activeSection, setMenuOpen, menuOpen }) => {
                         <div className="flex space-x-4 ml-auto">
                             <a href="#inicio" className={`rounded-full px-3 py-2 text-sm font-medium ${activeSection === 'inicio' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Início</a>
                             <a href="#sobreNos" className={`rounded-full px-3 py-2 text-sm font-medium ${activeSection === 'sobreNos' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Sobre nós</a>
-                            <a href="#" className={`rounded-full px-3 py-2 text-sm font-medium ${activeSection === 'botao1' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Projetos</a>
-                            <a href="#" className={`rounded-full px-3 py-2 text-sm font-medium ${activeSection === 'botao2' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Botão</a>
+                            <a href="#projetos" className={`rounded-full px-3 py-2 text-sm font-medium ${activeSection === 'projetos' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Projetos</a>
+                            <a href="#" className={`rounded-full px-3 py-2 text-sm font-medium ${activeSection === 'contatos' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Contatos</a>
                         </div>
                     </div>
                 </div>
@@ -35,8 +35,8 @@ const Navbar = ({ activeSection, setMenuOpen, menuOpen }) => {
                 <div className="space-y-1 px-2 pb-3 pt-2">
                     <a href="#inicio" className={`block rounded-full px-3 py-2 text-base font-medium ${activeSection === 'inicio' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Início</a>
                     <a href="#sobreNos" className={`block rounded-full px-3 py-2 text-base font-medium ${activeSection === 'sobreNos' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Sobre nós</a>
-                    <a href="#" className={`block rounded-full px-3 py-2 text-base font-medium ${activeSection === 'botao1' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Projetos</a>
-                    <a href="#" className={`block rounded-full px-3 py-2 text-base font-medium ${activeSection === 'botao2' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Botão</a>
+                    <a href="#projetos" className={`block rounded-full px-3 py-2 text-base font-medium ${activeSection === 'projetos' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Projetos</a>
+                    <a href="#" className={`block rounded-full px-3 py-2 text-base font-medium ${activeSection === 'contatos' ? 'bg-indigo-600 text-white' : 'text-zinc-300 hover:bg-zinc-700 hover:text-white'} transition-all`}>Contatos</a>
                 </div>
             </div>
         </nav>

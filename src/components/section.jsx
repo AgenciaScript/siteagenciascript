@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CornerRightDown } from 'lucide-react';
+import { CornerRightDown, Eye } from 'lucide-react';
 
 const Sections = ({ setActiveSection }) => {
     useEffect(() => {
@@ -60,7 +60,7 @@ const Sections = ({ setActiveSection }) => {
             <section id="sobreNos" className="relative min-h-screen flex items-center overflow-hidden bg-zinc-950">
                 <div className="grid max-w-screen-xl mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 w-full relative z-10">
                     <div className="hidden lg:col-span-5 lg:flex items-center justify-center">
-                        <div className="w-96 h-96 rounded-3xl bg-zinc-100 flex items-center justify-center">
+                        <div className="w-96 h-96 rounded-3xl flex items-center justify-center">
                             <img src="./src/assets/gif/logosAgencia.gif" alt="" className="w-full h-full object-cover rounded-3xl" />
                         </div>
                     </div>
@@ -76,45 +76,63 @@ const Sections = ({ setActiveSection }) => {
             </section>
 
             <section id="projetos" className="relative min-h-screen flex items-center overflow-hidden bg-zinc-100">
-                        
                 <div className="container mx-auto px-4">
-                    <h1 className="text-6xl font-semibold text-zinc-950 text-center mb-12">Nossos Projetos</h1>
-                    <p className="max-w-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-base lg:text-lg">
-                           Conheça alguns projetos já desenvolvidos pela Script
+                    <div className="mt-32 mb-24">
+                        <h1 className="text-6xl font-semibold text-zinc-950 text-center mb-2">
+                            Nossos Projetos
+                        </h1>
+                        <p className="max-w-screen-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-base lg:text-lg mb-12">
+                            Conheça alguns projetos já desenvolvidos pela Script
                         </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                        {/* Card de Projeto 1 */}
-                        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-12 max-w-screen-xl mx-auto justify-items-center">
+                        <div className="bg-white w-96 h-auto rounded-3xl shadow-sm overflow-hidden transform hover:shadow-md transition-transform duration-300">
                             <img src="url_da_imagem_projeto_1" alt="Projeto 1" className="w-full h-48 object-cover" />
                             <div className="p-6">
-                                <h3 className="text-2xl font-semibold text-zinc-900 mb-2">Projeto 1</h3>
-                                <p className="text-zinc-600">Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente.</p>
-                                <a href="#projeto1" className="text-indigo-500 hover:text-indigo-600 mt-4 inline-block">Ver Projeto</a>
+                                <h3 className="text-xl font-semibold text-zinc-800 mb-3">Projeto 1</h3>
+                                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
+                                    Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente.
+                                </p>
+                                <a href="#link" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">
+                                    Ver Projeto
+                                    <Eye className="ml-2"/>
+                                </a>
                             </div>
                         </div>
 
-                        {/* Card de Projeto 2 */}
-                        <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                            <img src="url_da_imagem_projeto_2" alt="Projeto 2" className="w-full h-48 object-cover" />
+                        <div className="bg-white w-96 h-auto rounded-3xl shadow-sm overflow-hidden transform hover:shadow-md transition-transform duration-300">
+                            <img src="url_da_imagem_projeto_1" alt="Projeto 1" className="w-full h-48 object-cover" />
                             <div className="p-6">
-                                <h3 className="text-2xl font-semibold text-zinc-900 mb-2">Projeto 2</h3>
-                                <p className="text-zinc-600">Descrição breve do projeto 2. Aplicamos tecnologias avançadas para otimizar processos e aumentar a eficiência.</p>
-                                <a href="#projeto2" className="text-indigo-500 hover:text-indigo-600 mt-4 inline-block">Ver Projeto</a>
+                                <h3 className="text-xl font-semibold text-zinc-800 mb-3">Projeto 1</h3>
+                                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
+                                    Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente.
+                                </p>
+                                <a href="#link" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">
+                                    Ver Projeto
+                                    <Eye className="ml-2"/>
+                                </a>
                             </div>
                         </div>
 
-                         {/* Card de Projeto 3 */}
-                         <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                            <img src="url_da_imagem_projeto_2" alt="Projeto 2" className="w-full h-48 object-cover" />
+                        <div className="bg-white w-96 h-auto rounded-3xl shadow-sm overflow-hidden transform hover:shadow-md transition-transform duration-300">
+                            <img src="url_da_imagem_projeto_1" alt="Projeto 1" className="w-full h-48 object-cover" />
                             <div className="p-6">
-                                <h3 className="text-2xl font-semibold text-zinc-900 mb-2">Projeto 3</h3>
-                                <p className="text-zinc-600">Descrição breve do projeto 2. Aplicamos tecnologias avançadas para otimizar processos e aumentar a eficiência.</p>
-                                <a href="#projeto3" className="text-indigo-500 hover:text-indigo-600 mt-4 inline-block">Ver Projeto</a>
+                                <h3 className="text-xl font-semibold text-zinc-800 mb-3">Projeto 1</h3>
+                                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
+                                    Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente.
+                                </p>
+                                <a href="#link" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">
+                                    Ver Projeto
+                                    <Eye className="ml-2"/>
+                                </a>
                             </div>
                         </div>
-                                        {/* Empresas atendidas */}
-                                                  
-                        <div className="mt-12 text-center">
+                    </div>
+
+                    
+
+                    <div className="mt-12 text-center">
                         <h2 className="text-5xl font-semibold text-zinc-950 text-center">Empresas Parceiras</h2>
                         <p className="max-w-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-base lg:text-lg">
                             Já desenvolvemos soluções para empresas como:
@@ -130,10 +148,9 @@ const Sections = ({ setActiveSection }) => {
                             </div>
                         </div>
                     </div>
-                                                                                        
-                    </div>
                 </div>
             </section>
+
         </>
     );
 };
