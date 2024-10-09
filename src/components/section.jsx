@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { CornerRightDown, Eye } from 'lucide-react';
+import { CornerRightDown } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import CardProject from './cardProject';
+import 'swiper/swiper-bundle.css';
+import 'swiper/css/navigation';
+import { Pagination } from 'swiper/modules';
 
 const Sections = ({ setActiveSection }) => {
     useEffect(() => {
@@ -82,71 +87,59 @@ const Sections = ({ setActiveSection }) => {
                             Nossos Projetos
                         </h1>
                         <p className="max-w-screen-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-base lg:text-lg mb-12">
-                            Conheça alguns projetos já desenvolvidos pela Script
+                            Conheça alguns projetos já desenvolvidos pela Script.
                         </p>
                     </div>
-                    
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-12 max-w-screen-xl mx-auto justify-items-center">
-                        <div className="bg-white w-96 h-auto rounded-3xl shadow-sm overflow-hidden transform hover:shadow-md transition-transform duration-300">
-                            <img src="url_da_imagem_projeto_1" alt="Projeto 1" className="w-full h-48 object-cover" />
-                            <div className="p-6">
-                                <h3 className="text-xl font-semibold text-zinc-800 mb-3">Projeto 1</h3>
-                                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
-                                    Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente.
-                                </p>
-                                <a href="#link" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">
-                                    Ver Projeto
-                                    <Eye className="ml-2"/>
-                                </a>
-                            </div>
-                        </div>
 
-                        <div className="bg-white w-96 h-auto rounded-3xl shadow-sm overflow-hidden transform hover:shadow-md transition-transform duration-300">
-                            <img src="url_da_imagem_projeto_1" alt="Projeto 1" className="w-full h-48 object-cover" />
-                            <div className="p-6">
-                                <h3 className="text-xl font-semibold text-zinc-800 mb-3">Projeto 1</h3>
-                                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
-                                    Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente.
-                                </p>
-                                <a href="#link" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">
-                                    Ver Projeto
-                                    <Eye className="ml-2"/>
-                                </a>
-                            </div>
-                        </div>
+                    <div className="flex justify-center mx-auto">
+                        <Swiper className="mt-24-12 max-w-screen-xl mx-auto" modules={[Pagination]}  pagination={{ dynamicBullets: true }} spaceBetween={20} slidesPerView={1}
+                            breakpoints={{
+                                300: {
+                                    slidesPerView: 1,
+                                },
+                                800: {
+                                    slidesPerView: 2,
+                                },
+                                1200: {
+                                    slidesPerView: 3,
+                                },
+                        }}>
+                            <SwiperSlide>
+                                <CardProject
+                                    title="Projeto 1"
+                                    description="Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente."
+                                    imgUrl="url_da_imagem_projeto_1"
+                                    link="#link1"
+                                />
+                            </SwiperSlide>
 
-                        <div className="bg-white w-96 h-auto rounded-3xl shadow-sm overflow-hidden transform hover:shadow-md transition-transform duration-300">
-                            <img src="url_da_imagem_projeto_1" alt="Projeto 1" className="w-full h-48 object-cover" />
-                            <div className="p-6">
-                                <h3 className="text-xl font-semibold text-zinc-800 mb-3">Projeto 1</h3>
-                                <p className="text-zinc-500 text-sm leading-relaxed mb-4">
-                                    Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente.
-                                </p>
-                                <a href="#link" className="transform hover:scale-110 relative mt-6 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-full bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-800 transition-all max-w-fit">
-                                    Ver Projeto
-                                    <Eye className="ml-2"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                            <SwiperSlide>
+                                <CardProject
+                                    title="Projeto 2"
+                                    description="Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente."
+                                    imgUrl="url_da_imagem_projeto_2"
+                                    link="#link2"
+                                />
+                            </SwiperSlide>
 
-                    
+                            <SwiperSlide>
+                                <CardProject
+                                    title="Projeto 3"
+                                    description="Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente."
+                                    imgUrl="url_da_imagem_projeto_3"
+                                    link="#link3"
+                                />
+                            </SwiperSlide>
 
-                    <div className="mt-12 text-center">
-                        <h2 className="text-5xl font-semibold text-zinc-950 text-center">Empresas Parceiras</h2>
-                        <p className="max-w-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-base lg:text-lg">
-                            Já desenvolvemos soluções para empresas como:
-                        </p>
-                        <div className="flex justify-center items-center space-x-12 mx-auto max-w-screen-lg">
-                            <div className="flex flex-col items-center">
-                                <img src="./src/assets/img/logo_nutrilite.jpg" alt="Nutrilite" className="w-32 h-auto mb-2"/>
-                                <span className="text-indigo-600 font-medium text-lg">Nutrilite</span>
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <img src="./src/assets/img/logo_senac.jpg" alt="Senac Ceará" className="w-32 h-auto mb-2"/>
-                                <span className="text-indigo-600 font-medium text-lg">Senac Ceará</span>
-                            </div>
-                        </div>
+                            <SwiperSlide>
+                                <CardProject
+                                    title="Projeto 4"
+                                    description="Descrição breve do projeto 1. Uma solução personalizada desenvolvida para atender às necessidades do cliente."
+                                    imgUrl="url_da_imagem_projeto_4"
+                                    link="#link4"
+                                />
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </section>
