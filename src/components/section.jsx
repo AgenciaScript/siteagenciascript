@@ -140,9 +140,99 @@ const Sections = ({ setActiveSection }) => {
                                 />
                             </SwiperSlide>
                         </Swiper>
-                    </div>
+                    </div>     
                 </div>
+                </section>
+                                {/* Sessão "Nos Conte Sua Ideia" */}
+                <section id="conteSuaIdeia" className="relative min-h-screen flex items-center  bg-zinc-950 py-16">
+                    <div className="container mx-auto px-4">
+                        <h2 className="text-5xl font-semibold text-zinc-100 text-center mb-8">Nos Conte Sua Ideia</h2>
+                        <p className="max-w-2xl mx-auto font-light text-zinc-400  text-center lg:mb-12 text-base lg:text-lg">
+                            Queremos ouvir sobre o seu projeto. Preencha o formulário abaixo e entraremos em contato para ajudar a transformar sua ideia em realidade.
+                        </p>
+                        <form className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg">
+                            {/* Nome da Empresa */}
+                            <div className="mb-6">
+                                <label htmlFor="empresa" className="block text-sm font-medium text-zinc-900 mb-2">Nome da Empresa</label>
+                                <input 
+                                    type="text" 
+                                    id="empresa" 
+                                    className="w-full px-4 py-2 border border-zinc-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:outline-none" 
+                                    placeholder="Digite o nome da empresa" 
+                                />
+                            </div>
+
+                            {/* Tipo de Serviço */}
+                            <div className="mb-6">
+                                <label htmlFor="servico" className="block text-sm font-medium text-zinc-900 mb-2">Que tipo de serviço você procura?</label>
+                                <select 
+                                    id="servico" 
+                                    className="w-full px-4 py-2 border border-zinc-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                                    <option value="" disabled selected>Escolha uma opção</option>
+                                    <option value="site">Site</option>
+                                    <option value="aplicativo">Aplicativo</option>
+                                    <option value="desktop">Software Desktop</option>
+                                </select>
+                            </div>
+
+                            {/* Breve Descrição da Ideia */}
+                            <div className="mb-6">
+                                <label htmlFor="descricao" className="block text-sm font-medium text-zinc-900 mb-2">Breve Descrição da Ideia</label>
+                                <textarea 
+                                    id="descricao" 
+                                    rows="4" 
+                                    className="w-full px-4 py-2 border border-zinc-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:outline-none" 
+                                    placeholder="Descreva brevemente sua ideia"
+                                ></textarea>
+                            </div>
+
+                            {/* Botão de Envio */}
+                            <button 
+                                type="submit" 
+                                className="w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition-all focus:ring-4 focus:ring-indigo-800"
+                            >
+                                Enviar Ideia
+                            </button>
+                        </form>
+                              {/* Contato da Empresa */}
+                        <div className="text-center py-16">
+                            <h3 className="text-3xl font-semibold text-zinc-100  mb-4">Entre em Contato</h3>
+                            <p className="text-zinc-400 font-light text-base lg:text-lg mb-6">
+                                Siga-nos nas redes sociais ou envie um e-mail para tirar dúvidas ou iniciar um projeto.
+                            </p>
+                            <div className="flex justify-center items-center space-x-8">
+                                {/* Instagram */}
+                                <a href="https://www.instagram.com/agenciascriptt/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
+                                    <img src="./src/assets/img/instagram.png" alt="Instagram" className="w-12 h-12" />
+                                    <span className="text-indigo-600 font-medium text-lg">@agenciascriptt</span>
+                                </a>
+                                {/* E-mail */}
+                                <div className="flex flex-col items-center">
+                                <a href="mailto:contatoagenciascript@gmail.com"  className="flex flex-col items-center">
+                                    <img src="./src/assets/img/gmail.png" alt="E-mail" className="w-12 h-12" />
+                                    <span className="text-indigo-600 font-medium text-lg">contatoagenciascript@gmail.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                      </div> 
+                    </div>
             </section>
+            <footer className="bg-zinc-900 text-white py-8">
+                <div className="container mx-auto px-4 text-center">
+                    
+                    {/* Informações da empresa centralizadas */}
+                    <div className="mb-4">
+                        <h3 className="text-lg font-semibold">Agência Script</h3>
+                             <p className="text-sm">Transformando ideias em websites incríveis</p>
+                    </div>
+
+                    {/* Direitos autorais centralizados */}
+                    <div className="text-sm text-zinc-500 mt-6">
+                    <p>&copy; 2024 Agência Script. Todos os direitos reservados.</p>
+                    </div>
+                    
+                </div>
+             </footer>
 
         </>
     );
