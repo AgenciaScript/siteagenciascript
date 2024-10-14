@@ -19,3 +19,6 @@
     background-color: #0a0a0b; 
 }
 
+.map {
+    filter: grayscale(100%) invert(95%) contrast(95%);
+}

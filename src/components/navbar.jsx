@@ -7,7 +7,7 @@ const Navbar = ({ activeSection, setMenuOpen, menuOpen }) => {
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="flex items-center justify-between w-full sm:w-auto">
                         <div className="flex flex-shrink-0 items-center">
-                            <img src="./src/assets/img/logo.png" className="h-10" alt="Logo Agência Script" />
+                            <img src="./src/assets/img/logo.svg" className="h-10" alt="Logo Agência Script" />
                         </div>
                         <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                             <button type="button" className="relative inline-flex items-center justify-center rounded-full p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
