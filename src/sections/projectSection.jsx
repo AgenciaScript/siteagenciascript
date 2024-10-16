@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CardProject from '../components/cardProject';
@@ -10,28 +9,34 @@ export function ProjectSection() {
     return (
         <section id="projetos" className="relative min-h-screen flex items-center overflow-hidden bg-zinc-100">
             <div className="container mx-auto px-4">
-                <div className="mb-24">
-                    <h1 className="text-6xl font-semibold text-zinc-950 text-center mb-2">
+                <div className="mb-12 sm:mb-24">
+                    <h1 className="text-4xl sm:text-6xl font-semibold text-zinc-950 text-center mb-2">
                         Nossos Projetos
                     </h1>
-                    <p className="max-w-screen-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-base lg:text-lg mb-12">
+                    <p className="max-w-screen-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-sm sm:text-base lg:text-lg mb-8 sm:mb-12">
                         Conheça alguns projetos já desenvolvidos pela Script.
                     </p>
                 </div>
 
                 <div className="flex justify-center mx-auto">
-                    <Swiper className="mt-24-12 max-w-screen-xl mx-auto" modules={[Pagination]} pagination={{ dynamicBullets: true }} spaceBetween={20} slidesPerView={1}
+                    <Swiper
+                        className="max-w-screen-xl mx-auto"
+                        modules={[Pagination]}
+                        pagination={{ dynamicBullets: true }}
+                        spaceBetween={20}
+                        slidesPerView={1}
                         breakpoints={{
-                            300: {
+                            640: {
                                 slidesPerView: 1,
                             },
-                            800: {
+                            768: {
                                 slidesPerView: 2,
                             },
-                            1200: {
+                            1024: {
                                 slidesPerView: 3,
                             },
-                        }}>
+                        }}
+                    >
                         <SwiperSlide>
                             <CardProject
                                 title="Projeto 1"

@@ -54,10 +54,10 @@ export function ContactsSection() {
             <Alert isOpen={isAlertOpen} message={alertMessage} onClose={closeAlert} />
             <div className="container mx-auto px-4">
                 <div className="mt-32 mb-24">
-                    <h2 className="text-6xl font-semibold text-zinc-100 text-center mb-2">
+                    <h2 className="max-w-2xl mb-4 text-4xl font-semibold tracking-tight leading-none md:text-5xl xl:text-6xl text-zinc-100 text-center mx-auto">
                         Nos Conte Sua Ideia
                     </h2>
-                    <p className="max-w-screen-lg mx-auto font-light text-zinc-400 text-center lg:mb-8 text-base lg:text-lg mb-12">
+                    <p className="max-w-2xl font-light text-zinc-400 mb-6 text-sm md:text-base lg:text-lg text-center mx-auto">
                         Conte-nos sobre seu projeto. Preencha o formulário e entraremos em contato para transformá-lo em realidade. Atendemos presencialmente na Serra da Ibiapaba, Ceará.
                     </p>
                 </div>
