@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import useActiveSectionObserver from "./components/useActiveSectionObserver";
 import Navbar from "./components/navbar";
-import { SpeedDial } from './components/speedDial'; 
-import { HomeSection } from './sections/homeSection';
-import { AboutUsSection } from './sections/AboutUsSection';
-import { ProjectSection } from './sections/projectSection';
-import { ContactsSection } from './sections/contactsSection';
-import { FooterSection } from './sections/footerSection';
+import {SpeedDial} from './components/speedDial'; 
+import {HomeSection} from './sections/homeSection';
+import {AboutUsSection} from './sections/aboutUsSection';
+import {ProjectSection} from './sections/projectSection';
+import {ContactsSection} from './sections/contactsSection';
+import {FooterSection} from './sections/footerSection';
 
 function App() {
     const [activeSection, setActiveSection] = useState('inicio');
