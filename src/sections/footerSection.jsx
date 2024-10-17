@@ -1,4 +1,5 @@
 import React from 'react';
+import LogoAgenciaScript from '../assets/img/logo.svg';''
 
 export function FooterSection() {
     return (
@@ -6,7 +7,7 @@ export function FooterSection() {
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="flex flex-col items-center mb-6">
                     <a href="" className="flex items-center justify-center">
-                        <img src="./src/assets/img/logo.svg" className="h-12 mb-3" alt="Agência Script" />
+                        <img src={LogoAgenciaScript} className="h-12 mb-3" alt="Agência Script" />
                     </a>
                 </div>
                 <hr className="my-6 border-zinc-700 sm:mx-auto" />

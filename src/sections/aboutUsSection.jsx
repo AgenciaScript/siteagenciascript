@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../components/modal';
+import LogosAgenciaGif from '../assets/gif/logosAgencia.gif';
 import profileLuan from '../assets/img/profile-luan.svg';
 import profileThainara from '../assets/img/profile-thainara.svg';
 
@@ -39,7 +40,7 @@ export function AboutUsSection() {
             <div className="grid max-w-screen-xl mx-auto gap-8 md:gap-8 xl:gap-0 md:py-16 grid-cols-1 md:grid-cols-12 w-full relative z-0">
                 <div className="md:col-span-5 flex items-center justify-center md:mb-0">
                     <div className="w-80 h-80 md:w-96 md:h-96 rounded-3xl flex items-center justify-center">
-                        <img src="./src/assets/gif/logosAgencia.gif" alt="Agência GIF" className="w-full h-full object-cover rounded-3xl" />
+                        <img src={LogosAgenciaGif} alt="Agência GIF" className="w-full h-full object-cover rounded-3xl" />
                     </div>
                 </div>
                 <div className="md:col-span-7 flex flex-col items-center text-center md:items-start md:text-left px-6 md:px-1">
