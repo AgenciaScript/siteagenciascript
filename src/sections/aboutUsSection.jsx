@@ -47,10 +47,11 @@ export function AboutUsSection() {
                         Sobre nós
                     </h1>
                     <p className="max-w-2xl font-light text-zinc-400 mb-6 text-sm md:text-base lg:text-lg text-justify">
-                        A Agência Script, fundada por
+                        A Agência Script, fundada por 
                         <span className="font-bold text-zinc-300 cursor-pointer" onClick={() => handleOpenModal(miniCurriculos[0])}> Luan Rodrigues </span>
-                        e
-                        <span className="font-bold text-zinc-300 cursor-pointer" onClick={() => handleOpenModal(miniCurriculos[1])}> Thainara Marques </span>, é especializada no desenvolvimento de soluções de software para dispositivos mobile, desktop e web. Nosso foco está em criar aplicativos, sites e sistemas sob medida que atendem às demandas e desafios específicos de cada cliente. Utilizamos tecnologias avançadas e metodologias ágeis para garantir que nossos produtos sejam robustos, eficientes e escaláveis. Combinamos expertise técnica com uma abordagem centrada no usuário para entregar soluções que realmente fazem a diferença.
+                         e 
+                        <span className="font-bold text-zinc-300 cursor-pointer" onClick={() => handleOpenModal(miniCurriculos[1])}> Thainara Marques </span>
+                        , é especializada no desenvolvimento de soluções de software para dispositivos mobile, desktop e web. Nosso foco está em criar aplicativos, sites e sistemas sob medida que atendem às demandas e desafios específicos de cada cliente. Desde o desenvolvimento até a hospedagem e manutenção de sites e sistemas, utilizamos tecnologias avançadas e metodologias ágeis para garantir que nossos produtos sejam robustos, eficientes e escaláveis, combinando expertise técnica com uma abordagem centrada no usuário para entregar soluções que realmente fazem a diferença.
                     </p>
                 </div>
                 <Modal
