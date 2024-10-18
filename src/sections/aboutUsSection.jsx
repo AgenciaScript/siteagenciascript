@@ -40,7 +40,7 @@ export function AboutUsSection() {
             <div className="grid max-w-screen-xl mx-auto gap-8 md:gap-8 xl:gap-0 md:py-16 grid-cols-1 md:grid-cols-12 w-full relative z-0">
                 <div className="md:col-span-5 flex items-center justify-center md:mb-0">
                     <div className="w-80 h-80 md:w-96 md:h-96 rounded-3xl flex items-center justify-center">
-                        <img src={LogosAgenciaGif} alt="Agência GIF" className="w-full h-full object-cover rounded-3xl" />
+                        <img src={LogosAgenciaGif} alt="Agência GIF" className="w-full h-full object-cover rounded-3xl mt-8 md:mt-0" />
                     </div>
                 </div>
                 <div className="md:col-span-7 flex flex-col items-center text-center md:items-start md:text-left px-6 md:px-1">
@@ -50,7 +50,7 @@ export function AboutUsSection() {
                     <p className="max-w-2xl font-light text-zinc-400 mb-6 text-sm md:text-base lg:text-lg text-justify">
                         A Agência Script, fundada por 
                         <span className="font-bold text-zinc-300 cursor-pointer" onClick={() => handleOpenModal(miniCurriculos[0])}> Luan Rodrigues </span>
-                         e 
+                        e 
                         <span className="font-bold text-zinc-300 cursor-pointer" onClick={() => handleOpenModal(miniCurriculos[1])}> Thainara Marques </span>
                         , é especializada no desenvolvimento de soluções de software para dispositivos mobile, desktop e web. Nosso foco está em criar aplicativos, sites e sistemas sob medida que atendem às demandas e desafios específicos de cada cliente. Desde o desenvolvimento até a hospedagem e manutenção de sites e sistemas, utilizamos tecnologias avançadas e metodologias ágeis para garantir que nossos produtos sejam robustos, eficientes e escaláveis, combinando expertise técnica com uma abordagem centrada no usuário para entregar soluções que realmente fazem a diferença.
                     </p>
