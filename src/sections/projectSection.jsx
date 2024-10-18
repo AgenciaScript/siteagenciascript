@@ -4,7 +4,7 @@ import CardProject from '../components/cardProject';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import { Pagination } from 'swiper/modules';
-
+import { ArrowRight } from 'lucide-react';
 import empregaJovemMaisImg from '../assets/img/emprega-jovem-mais.png';
 import catMessengerImg from '../assets/img/cat-messenger.png';
 import sushiDaSerraImg from '../assets/img/sushi-da-serra.png';
@@ -21,8 +21,13 @@ export function ProjectSection() {
                     <p className="max-w-screen-xl mx-auto font-light text-zinc-700 text-center lg:mb-8 text-sm sm:text-base lg:text-lg mb-8 sm:mb-12">
                         Conheça alguns projetos já desenvolvidos pela Script.
                     </p>
+                    <div className="flex justify-center">
+                        <span className="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded-full inline-block">
+                            Arraste para o lado
+                            <ArrowRight className="inline ml-2" />
+                        </span>
+                    </div>
                 </div>
-
                 <div className="flex justify-center mx-auto">
                     <Swiper
                         className="max-w-screen-xl mx-auto"
@@ -40,8 +45,7 @@ export function ProjectSection() {
                             1024: {
                                 slidesPerView: 3,
                             },
-                        }}
-                    >
+                        }}>
                         <SwiperSlide>
                             <CardProject
                                 title="Emprega Jovem +"
